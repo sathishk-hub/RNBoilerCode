@@ -3,4 +3,9 @@
 
 #npm test
 
-yarn lint --fix &&  git add . && yarn lint-staged && git add .&& exec < /dev/tty && npx cz --hook || true
+npm run lint --fix 
+git add . 
+npx lint-staged 
+git add .
+exec < /dev/tty && npx cz --hook || true
+
